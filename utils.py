@@ -18,6 +18,6 @@ def keyword_extractor(text, model):
 
 def print_keywords(text):
     result = keyword_extractor(text,model)
-    print("   keyword\tweight")
+    print("   word\t\tweight")
     for i,(word,weight) in enumerate(result):
         print('{}. {}\t{:.2f}'.format(i+1,word,weight))
